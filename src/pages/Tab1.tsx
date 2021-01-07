@@ -9,19 +9,16 @@ const Tab1: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Tab 1</IonTitle>
+          <IonTitle>HOME</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Tab 1dd</IonTitle>
+            <IonTitle size="large">Tab 1ded</IonTitle>
             
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Tab 1 page" >
-         
-        </ExploreContainer>
       </IonContent>
     </IonPage>
   );

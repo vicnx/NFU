@@ -1,0 +1,16 @@
+.firstrow{
+    display: flex;
+    align-content: center;
+    background-color: bisque;
+    height: 50px;
+}
+.firstrow ion-col{
+    font-weight: bolder;
+}
+
+.ListItems span{
+    padding: 20px; 
+}
+ion-col{
+    text-align: center;
+}
