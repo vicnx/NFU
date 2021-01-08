@@ -1,47 +1,44 @@
 import React from 'react';
-
+import { person, compass } from 'ionicons/icons';
 import {
-    IonButton,
-    IonRow, 
-    IonCol,
-    IonItem
+    IonSlides,
+    IonSlide,
+    IonRow,  
+    IonLabel,  
+    IonCard,
+    IonIcon,
+    IonCardHeader,
+    IonCardSubtitle,
+    IonCardTitle,
+    IonCardContent,
+    IonContent
   
   } from '@ionic/react';
 
 const Item = (props) =>{
-    const slideOpts = {
-        slidesPerView: 'auto', 
-        zoom: false, 
-        grabCursor: true,       
-        virtual: true, 
-      }; 
 
-     function handleClick(start,inc){
-        alert("start:"+start+ " End:"+(start+inc));    
-      }
-
+     function eventClick(event_id){
+        alert(event_id);    
+    }
+    const event = props.item;
     return (
         <>
-            <IonRow>
-                <IonCol size="2">
-                    IMAGE
-                </IonCol>
-                <IonCol size="5">
-                    <IonRow>
-                        TITLE
-                    </IonRow>
-                    <IonRow>
-                        Description
-                    </IonRow>
-                </IonCol>
-
-                <IonCol size="1">
-                    1/5
-                </IonCol>
-                <IonCol size="1">
-                    <IonButton color="primary">JOIN</IonButton>
-                </IonCol>
-            </IonRow>
+          <IonCard className="event" onClick={() => eventClick(event.id)} >
+            <div className="event-image">
+              <img src={event.image}></img>
+            </div>
+            <div className="event-content">
+              <span className="event-content-title">{event.title}</span>
+            </div>
+            <div className="event-players badge badge-blue">
+              <span className="badge-icon"><IonIcon icon={person}/></span>
+              <span>{event.players}/{event.maxplayers}</span>
+            </div>
+            <div className="event-location badge badge-green">
+              <span className="badge-icon"><IonIcon icon={compass}/></span>
+              <span>{event.location.city}</span>
+            </div>
+          </IonCard>
         </>
     )
 }

@@ -1,0 +1,68 @@
+{
+    "events": {
+        "1608062400": {
+                "id": 1,
+                "title": "Play CSGO",
+                "description": "Unete a nuestro equipo de CSGO para disputar una partida este sabado",
+                "players": 2,
+                "maxplayers": 5,
+                "status": "open",
+                "time":"2021-2-1 06:40",
+                "type":"Games",
+                "location":{
+                    "country":"Spain",
+                    "postalcode":"46870",
+                    "city":"Ontinyent"
+                },
+                "image":"https://1.bp.blogspot.com/-bUWP_6OIs9c/Xw4Ri3HYd6I/AAAAAAAAB10/Z0nNbWzEejYekv1WpkCe46esiRNSr-UagCLcBGAsYHQ/s1920/CSGO.jpg"
+            },
+        "1608062401": {
+            "id": 2,
+            "title": "Futbol",
+            "description": "Unete a nuestro equipo de Futbol para disputar un partido este sabado",
+            "players": 1,
+            "maxplayers": 5,
+            "status": "open",
+            "time":"2021-2-4 06:40",
+            "type":"Sport",
+            "location":{
+                "country":"Spain",
+                "postalcode":"46800",
+                "city":"Xativa"
+            },
+            "image":"https://1.bp.blogspot.com/-bUWP_6OIs9c/Xw4Ri3HYd6I/AAAAAAAAB10/Z0nNbWzEejYekv1WpkCe46esiRNSr-UagCLcBGAsYHQ/s1920/CSGO.jpg"
+        },
+        "1608062402": {
+            "id": 2,
+            "title": "Futbol",
+            "description": "Unete a nuestro equipo de Futbol para disputar un partido este sabado",
+            "players": 1,
+            "maxplayers": 5,
+            "status": "open",
+            "time":"2021-2-4 06:40",
+            "type":"Sport",
+            "location":{
+                "country":"Spain",
+                "postalcode":"46800",
+                "city":"Xativa"
+            },
+            "image":"https://static1.ideal.es/www/multimedia/202002/08/media/cortadas/murray-k8CC-U10060391808xuB-1248x770@Ideal.jpg"
+        },
+        "1608062403": {
+            "id": 2,
+            "title": "Futbol",
+            "description": "Unete a nuestro equipo de Futbol para disputar un partido este sabado",
+            "players": 1,
+            "maxplayers": 5,
+            "status": "open",
+            "time":"2021-2-4 06:40",
+            "type":"Sport",
+            "location":{
+                "country":"Spain",
+                "postalcode":"46800",
+                "city":"Xativa"
+            },
+            "image":"https://1.bp.blogspot.com/-bUWP_6OIs9c/Xw4Ri3HYd6I/AAAAAAAAB10/Z0nNbWzEejYekv1WpkCe46esiRNSr-UagCLcBGAsYHQ/s1920/CSGO.jpg"
+        }
+    }
+}
