@@ -9,6 +9,12 @@
             "status": "open",
             "time":"2021-2-1 06:40",
             "type":"Games",
+            "author":{
+                "username": "Joel",
+                "image":"https://thispersondoesnotexist.com/image",
+                "rate":"2",
+                "bio":"Default Bio"
+            },
             "location":{
                 "country":"Spain",
                 "postalcode":"46870",
@@ -29,6 +35,12 @@
             "status": "open",
             "time":"2021-2-4 06:40",
             "type":"Sport",
+            "author":{
+                "username": "Tono Ipsum",
+                "image":"https://thispersondoesnotexist.com/image",
+                "rate":"6",
+                "bio":"Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. "
+            },
             "location":{
                 "country":"Spain",
                 "postalcode":"46800",
@@ -48,6 +60,12 @@
             "status": "open",
             "time":"2021-2-4 06:40",
             "type":"Sport",
+            "author":{
+                "username": "Fake Person",
+                "image":"https://thispersondoesnotexist.com/image",
+                "rate":"10",
+                "bio":"Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. ."
+            },
             "location":{
                 "country":"Spain",
                 "postalcode":"99999",
@@ -67,6 +85,12 @@
             "status": "open",
             "time":"2021-2-4 06:40",
             "type":"Sport",
+            "author":{
+                "username": "Vicente",
+                "image":"https://2.bp.blogspot.com/-9unW-4lkfEo/W_Kzb79JGFI/AAAAAAAAADI/aFHn3p8zT0gNaYuY3Zha7gGvUdrWewKhACLcBGAs/s1600/IMG_4422.JPG",
+                "rate":"10",
+                "bio":"Soy una persona trabajadora, que se esfuerza para conseguir todas las metas que se proponga. Desde que conocí el mundo de la programación no he dejado de aprender y llenarme de conocimientos."
+            },
             "location":{
                 "country":"Spain",
                 "postalcode":"46800",
@@ -90,6 +114,12 @@
             "status": "open",
             "time":"2021-2-1 06:40",
             "type":"Games",
+            "author":{
+                "username": "Vicente",
+                "image":"https://2.bp.blogspot.com/-9unW-4lkfEo/W_Kzb79JGFI/AAAAAAAAADI/aFHn3p8zT0gNaYuY3Zha7gGvUdrWewKhACLcBGAs/s1600/IMG_4422.JPG",
+                "rate":"10",
+                "bio":"Soy una persona trabajadora, que se esfuerza para conseguir todas las metas que se proponga. Desde que conocí el mundo de la programación no he dejado de aprender y llenarme de conocimientos."
+            },
             "location":{
                 "country":"Spain",
                 "postalcode":"46870",
