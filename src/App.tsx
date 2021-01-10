@@ -10,11 +10,12 @@ import {
   IonTabs
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { ellipse, square, triangle, home, people } from 'ionicons/icons';
+import { ellipse, square, triangle, home, people, addCircle } from 'ionicons/icons';
 import Home from './pages/Home';
 import Events from './pages/Events';
 import Tab3 from './pages/Tab3';
 import Details from './pages/Details.js';
+import Create from './pages/create/Create'
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -42,7 +43,7 @@ const App: React.FC = () => (
         <IonRouterOutlet>
           <Route path="/home" component={Home} exact={true} />
           <Route path="/events" component={Events} exact={true} />
-          <Route path="/tab3" component={Tab3} />
+          <Route path="/create" component={Create} />
           <Route path="/event/:id" component={Details}/>
           <Route path="/" render={() => <Redirect to="/home" />} exact={true} />
         </IonRouterOutlet>
@@ -55,9 +56,9 @@ const App: React.FC = () => (
             <IonIcon icon={people} />
             <IonLabel>EVENTS</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3">
-            <IonIcon icon={square} />
-            <IonLabel>Tab 3</IonLabel>
+          <IonTabButton tab="create" href="/create">
+            <IonIcon icon={addCircle} />
+            <IonLabel>Añadir evento</IonLabel>
           </IonTabButton>
         </IonTabBar>
       </IonTabs>
