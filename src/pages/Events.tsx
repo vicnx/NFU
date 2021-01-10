@@ -1,6 +1,6 @@
 import React from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ItemList from '../components/ItemList';
+import Event_List from '../components/Event/Event_List';
 import './Events.css';
 
 const Events: React.FC = () => {
@@ -17,7 +17,7 @@ const Events: React.FC = () => {
             <IonTitle size="large">EVENTS</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ItemList></ItemList>
+        <Event_List></Event_List>
       </IonContent>
     </IonPage>
   );

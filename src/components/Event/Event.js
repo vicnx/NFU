@@ -15,7 +15,7 @@ import {
   
   } from '@ionic/react';
 
-const Item = (props) =>{
+const Event = (props) =>{
 
      function eventClick(event_id){
         // alert(event_id);    
@@ -43,4 +43,4 @@ const Item = (props) =>{
     )
 }
 
-export default Item;
+export default Event;

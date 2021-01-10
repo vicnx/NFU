@@ -1,9 +1,7 @@
 import React from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
 import './Home.css';
-import ItemList from '../components/ItemList';
-import Item from '../components/Item';
+import Event_List from '../components/Event/Event_List';
 
 
 const Home: React.FC = () => {
@@ -21,7 +19,7 @@ const Home: React.FC = () => {
             
           </IonToolbar>
         </IonHeader>
-        <ItemList></ItemList>
+        <Event_List></Event_List>
       </IonContent>
     </IonPage>
   );

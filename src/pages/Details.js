@@ -1,9 +1,9 @@
 import React from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonIcon, IonButton } from '@ionic/react';
 import { person, compass, alarm,star } from 'ionicons/icons';
-import ExploreContainer from '../components/ExploreContainer';
 import { useParams } from "react-router";
 import events from '../data/data.json';
+import Author from '../components/author/Author';
 
 import './details.css';
 const Details= () => {
@@ -45,14 +45,15 @@ const Details= () => {
                 <span className="event-card-content-left-title">{event.title}</span>
                 <span className="event-card-content-left-desc">{event.description}</span>
                 <div className="event-card-content-left-authorinfo">
-                  <div className="event-card-content-left-authorinfo-left">
+                  <Author className="event" key={event.id} item={event.author} ></Author>
+                  {/* <div className="event-card-content-left-authorinfo-left">
                     <img src={event.author.image}/>
                   </div>
                   <div className="event-card-content-left-authorinfo-right">
                       <span className="event-card-content-left-authorinfo-right-username">{event.author.username}</span>
                       <span className="event-card-content-left-authorinfo-right-bio">{event.author.bio}</span>
                       <span className="event-card-content-left-authorinfo-right-rate"><span className="event-card-content-left-authorinfo-right-rate-icon"><IonIcon icon={star}/></span> {event.author.rate}/10</span>
-                  </div>
+                  </div> */}
                 </div>
                 <IonButton className="event-card-content-left-join" color="success">JOIN</IonButton>
               </div>

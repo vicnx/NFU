@@ -1,5 +1,5 @@
 import React from 'react';
-import events from '../data/data.json';
+import events from '../../data/data.json';
 import {
   IonSlides,
   IonSlide,
@@ -13,10 +13,10 @@ import {
   IonCardContent
 
 } from '@ionic/react';
-import './Item.css';
-import Item from './Item.js';
+import './event.css';
+import Event from './Event.js';
 
-export default class ItemList extends React.Component {
+export default class Event_List extends React.Component {
 
     constructor(props){
       super(props);      
@@ -41,7 +41,7 @@ export default class ItemList extends React.Component {
           <div className="events">
           {
               events_array.map((event,index,arr) =>
-                  (<Item className="event" key={index} item={event} ></Item>)            
+                  (<Event className="event" key={index} item={event} ></Event>)            
                   // (<EpgRow key={index} dayOfWeek={keyByDay} events={this.state.events.get(keyByDay)} />)
               )
             }  
