@@ -2,6 +2,8 @@ import React from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import './Home.css';
 import Event_List from '../components/Event/Event_List';
+import i18n from "i18next";
+import { useTranslation, initReactI18next } from "react-i18next";
 
 
 const Home: React.FC = () => {
