@@ -15,7 +15,12 @@ import Home from './pages/Home';
 import Events from './pages/Events';
 import Tab3 from './pages/Tab3';
 import Details from './pages/Details.js';
-import Create from './pages/create/Create'
+import Create from './pages/create/Create';
+
+
+//translations
+// import { I18nextProvider } from 'react-i18next';
+// import i18n from './i18n';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -39,6 +44,7 @@ import './theme/variables.css';
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
+    {/* <I18nextProvider i18n={i18n}> */}
       <IonTabs>
         <IonRouterOutlet>
           <Route path="/home" component={Home} exact={true} />
@@ -62,6 +68,7 @@ const App: React.FC = () => (
           </IonTabButton>
         </IonTabBar>
       </IonTabs>
+      {/* </I18nextProvider> */}
     </IonReactRouter>
   </IonApp>
 );

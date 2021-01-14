@@ -23,6 +23,5 @@ en['en'].event = eventEn['en'];
 // en['en'].lighthouses.peggys = peggysEn;
 
 export {
-  es,
-  en,
+  en,es
 };
