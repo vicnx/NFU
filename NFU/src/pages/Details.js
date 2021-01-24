@@ -1,14 +1,16 @@
 import React,{useContext} from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonIcon, IonButton } from '@ionic/react';
-import { person, compass, alarm,star } from 'ionicons/icons';
+import { person, compass, alarm,star, cloudyNight } from 'ionicons/icons';
 import { useParams } from "react-router";
 import events from '../data/data.json';
 import Author from '../components/author/Author';
 import { Redirect } from 'react-router-dom';
+import { AppContext } from '../State';
 
 import './details.css';
 
 const Details= () => {
+    console.log("details!")
     //get id URL
     const  {id}  = useParams();
     console.log(id);
@@ -70,7 +72,7 @@ const Details= () => {
                 <div className="event-card-content-right-players">
                   {
                     players.map((player,index,arr) =>
-                      (<div className="player"><img src="https://image.freepik.com/vector-gratis/perfil-avatar-hombre-icono-redondo_24640-14044.jpg"></img><span>{player}</span></div>)            
+                      (<div key={index} className="player"><img src="https://image.freepik.com/vector-gratis/perfil-avatar-hombre-icono-redondo_24640-14044.jpg"></img><span>{player}</span></div>)            
                     )
                   }
                 </div>
