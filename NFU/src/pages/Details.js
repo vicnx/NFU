@@ -11,10 +11,8 @@ import Header from '../components/header/header';
 import './details.css';
 
 const Details= () => {
-    console.log("details!")
     //get id URL
     const  {id}  = useParams();
-    console.log(id);
     const events_array = Object.values(events.events);
     //gfet event by id
     let event = events_array.find(event =>  event.id == id);

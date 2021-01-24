@@ -22,8 +22,8 @@ import {
 
 const Login: React.FC = () => {
     const { state,dispatch } = useContext(AppContext);
-    const [ email, setEmail ] = useState<React.ReactText | undefined>('');
-    const [ password, setPassword ] = useState<React.ReactText | undefined>('');
+    const [ email, setEmail ] = useState<React.ReactText | undefined>('andanivicente@gmail.com');
+    const [ password, setPassword ] = useState<React.ReactText | undefined>('12345678');
     const [ , setFormErrors ] = useState(null);
     const [ showLoading, setShowLoading ] = useState(false);
 
@@ -55,6 +55,7 @@ const Login: React.FC = () => {
     //     console.log("HAY USER")
     //     return <Redirect to="/app/home" />   
     // }
+
         
     return (
     <IonPage>
