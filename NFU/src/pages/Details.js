@@ -6,6 +6,7 @@ import events from '../data/data.json';
 import Author from '../components/author/Author';
 import { Redirect } from 'react-router-dom';
 import { AppContext } from '../State';
+import Header from '../components/header/header';
 
 import './details.css';
 
@@ -28,11 +29,12 @@ const Details= () => {
 
   return (
     <IonPage>
-      <IonHeader>
+      <Header page={event.title+"#"+id} ></Header>
+      {/* <IonHeader>
         <IonToolbar>
           <IonTitle>{event.title}#{id}</IonTitle>
         </IonToolbar>
-      </IonHeader>
+      </IonHeader> */}
       <IonContent fullscreen >
         <IonHeader collapse="condense">
           <IonToolbar>

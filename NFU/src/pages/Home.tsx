@@ -22,6 +22,7 @@ import i18n from "i18next";
 import { useTranslation, initReactI18next } from "react-i18next";
 import { Redirect } from 'react-router-dom';
 import { ellipsisVertical, removeCircleOutline } from 'ionicons/icons';
+import Header from '../components/header/header';
 
 const Home: React.FC = () => {
   const { state,dispatch } = useContext(AppContext);
@@ -32,13 +33,14 @@ const Home: React.FC = () => {
   };
 
   if (!state.user) {   
-    return <Redirect to="/" /> 
+    console.log("JNO USER LOGIN");
+    return <Redirect to="/login" /> 
   }
 
   return (
     <IonPage>
-     
-      <IonHeader>
+     <Header page={"home"} ></Header>
+      {/* <IonHeader>
         <IonToolbar>
           <IonTitle>HOME</IonTitle>
           <IonButtons slot="end">
@@ -47,9 +49,9 @@ const Home: React.FC = () => {
             </IonButton>
           </IonButtons>
         </IonToolbar>
-      </IonHeader>
+      </IonHeader> */}
       <IonContent fullscreen>   
-         <IonPopover
+         {/* <IonPopover
             event={showUserMenuEvent}
             isOpen={!!showUserMenuEvent}
             onDidDismiss={() => setShowUserMenuEvent(null)}>
@@ -63,7 +65,7 @@ const Home: React.FC = () => {
               </IonItem>
             </IonList>
           </IonContent>
-          </IonPopover>     
+          </IonPopover>      */}
         <IonHeader collapse="condense">
           <IonToolbar>
             <IonTitle size="large">Tab 1ded</IonTitle>

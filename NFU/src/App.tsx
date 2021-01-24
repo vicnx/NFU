@@ -1,4 +1,5 @@
-import React from 'react';
+import React,{useContext} from 'react';
+import { AppContext } from './State';
 import { Redirect, Route } from 'react-router-dom';
 import {
   IonApp,
