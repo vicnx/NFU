@@ -1,4 +1,4 @@
-import React, {useContext,useState,useRef} from 'react';
+import React, {useContext,useState,useRef,useEffect} from 'react';
 import { AppContext } from '../State';
 import { Redirect } from 'react-router-dom';
 import { 
@@ -26,7 +26,7 @@ const Login: React.FC = () => {
     const [ password, setPassword ] = useState<React.ReactText | undefined>('');
     const [ , setFormErrors ] = useState(null);
     const [ showLoading, setShowLoading ] = useState(false);
-    
+
     const formRef = useRef(null);
 
     const handleSubmit = async e => {
@@ -47,15 +47,19 @@ const Login: React.FC = () => {
         }
     }
     
-    if (state.user) {
-        return <Redirect to="/app/home" />   
+    if(state.user){
+        console.log("HAY USER");
+        return <Redirect to="/app/home" />  
     }
+    // if (state.user) {
+    //     console.log("HAY USER")
+    //     return <Redirect to="/app/home" />   
+    // }
         
     return (
     <IonPage>
         <IonHeader>
         <IonToolbar color="light">
-            
                 <IonTitle>{'NFU'}</IonTitle>
         </IonToolbar>
         </IonHeader>

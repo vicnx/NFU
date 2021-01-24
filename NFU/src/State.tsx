@@ -17,8 +17,11 @@ let reducer = (state, action) => {
     case "SET_THEME": {
       return { ...state, theme: action.value }
     }
-    case "REMOVE_USER": {      
-      return { ...state, user: action.value }
+    case "LOGOUT": {      
+      return { ...state, user: "" }
+    }
+    case "RESET": {
+      return initialState;
     }
 
   }

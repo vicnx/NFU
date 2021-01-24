@@ -1,6 +1,8 @@
-import React,{useContext,useState} from 'react';
+import React,{useContext,useState,useEffect} from 'react';
 import { AppContext } from '../../State';
 import { ellipsisVertical, removeCircleOutline } from 'ionicons/icons';
+import { Redirect } from 'react-router-dom';
+
 
 import { person, compass, alarm,star } from 'ionicons/icons';
 import {  
@@ -22,9 +24,11 @@ import './header.css'
 const Header = (props) =>{
   const { state,dispatch } = useContext(AppContext);
   const [showUserMenuEvent, setShowUserMenuEvent] = useState(null);
-  const doLogout = () => {    
-    setShowUserMenuEvent(null);
-    dispatch({type:'SET_USER',value:''});       
+
+  const doLogout = async () => {  
+    setShowUserMenuEvent(null);          
+    dispatch({type:'LOGOUT'});
+    window.location.reload();  
   };
   
   const page = props.page;

@@ -27,12 +27,13 @@ import Header from '../components/header/header';
 const Home: React.FC = () => {
   const { state,dispatch } = useContext(AppContext);
   const [showUserMenuEvent, setShowUserMenuEvent] = useState(null);
-  const doLogout = () => {    
-    setShowUserMenuEvent(null);
-    dispatch({type:'SET_USER',value:''});       
-  };
+  // const doLogout = () => {    
+  //   setShowUserMenuEvent(null);
+  //   dispatch({type:'SET_USER',value:''});       
+  // };
 
   if (!state.user) {   
+    console.log("NO HAY USER");
     return <Redirect to="/" /> 
   }
 
