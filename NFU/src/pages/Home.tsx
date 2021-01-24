@@ -33,8 +33,7 @@ const Home: React.FC = () => {
   };
 
   if (!state.user) {   
-    console.log("JNO USER LOGIN");
-    return <Redirect to="/login" /> 
+    return <Redirect to="/" /> 
   }
 
   return (
